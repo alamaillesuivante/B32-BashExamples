@@ -16,9 +16,9 @@ declare -r Age=31
 `mkdir $prenom`
 
 echo $1 $2 $# $0
-# salut banane 2 ./02-variables.sh
+#salut banane 2 ./02-variables.sh
 # ./02-variables.sh salut banane
-# $1 c'Est le premir mot passé en paramètre lors de lappel du  script
-# $2 c'est le deuxieme mot passé en paramètre lors de lappel du script
-# $# c'est le nombre darguments passés en parametre
-# $0 c'est le nom fichier
+# $1 C'est le premier mot passé en paramètre lors de lappel du script
+# $2 C'est le deuxième mot passé en paramètre lors de lappel du script
+# $# C'est le nombre darguments passés en paramètres
+# $0 C'est le nom fichier
