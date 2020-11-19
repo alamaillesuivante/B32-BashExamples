@@ -2,7 +2,7 @@
 
 note=$1
 
-#lt <, -gt >, -ge >=, -le >, ==
+#lt <, -gt >, -ge >=, -le >,-eq  ==, -ne !=
 if [[ $note -lt 60 ]]
 then
 	echo "echec"
@@ -16,8 +16,31 @@ else
 fi
 
 
+lettre=$2
+case $lettre in
+c)
+	echo "cest un c"
+	;;
+d)
+	echo "cest un d"
+	;;
+[1-8])
+	echo "un chiffre entre 1 et 8"
+	;;
+[[:lower:]])
+	echo "cest un miniscule"
+	;;
+[[:upper:]])
+	echo "cest un masjustcule"
+	;;
+*) #cest comme default
+	echo "autre chose"
+	;;
+esac
 
-
-
-
+#comparaison string
+if test $lettre != "a" #! et == focntionne avec les strings
+then
+	echo "la lettre n'est pas a"
+fi
 
